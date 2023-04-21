@@ -19,7 +19,7 @@ module HTMLProofer
         path
       end
 
-      Nokogiri::HTML5(content, max_errors: -1)
+      Nokogiri::HTML5(content, max_errors: -1, max_tree_depth: -1)
     end
   end
 end
